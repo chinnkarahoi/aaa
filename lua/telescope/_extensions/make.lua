@@ -31,9 +31,9 @@ local list = function(opts)
       entry_maker = function(entry)
         return {
           valid = true,
-          text = entry.text,
-          ordinal = 1,
+          ordinal = entry.text,
           display = make_display,
+          text = entry.text,
         }
       end,
     },
